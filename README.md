@@ -20,8 +20,7 @@
 12. [Analytics](#12-analytics)
 13. [Validation & Error Handling](#13-validation--error-handling)
 14. [Design Philosophy](#14-design-philosophy)
-15. [Limitations](#15-limitations)
-16. [Future Improvements](#16-future-improvements)
+15. [Future Improvements](#16-future-improvements)
 
 ---
 
@@ -461,22 +460,9 @@ FleetFlow is built for **clarity, maintainability, and fast iteration** — not 
 - **Predictable REST APIs** — consistent request/response shapes across all endpoints
 - **Role-based dashboards** — UI adapts to user role without complex permission trees
 - **Database-first state** — Prisma enums define all valid states; code enforces transitions
-
 ---
 
-## 15. Limitations
-
-The current architecture intentionally omits:
-
-- No event-driven or message-queue architecture — operations are synchronous
-- No background job processing — long-running tasks are not yet supported
-- No multi-tenant support — designed for a single organization
-- No real-time data — fleet positions are not tracked live
-- Analytics not optimized for very large datasets — suitable for small-to-medium fleets
-
----
-
-## 16. Future Improvements
+## 15. Future Improvements
 
 - Real-time fleet tracking via WebSockets or GPS telemetry integration
 - Background job processing for scheduled maintenance reminders
@@ -486,4 +472,5 @@ The current architecture intentionally omits:
 - Push notification system for maintenance alerts and trip events
 - Mobile application for drivers (trip acceptance, status updates)
 - Audit log — track all state changes with timestamps and actor identity
+
 
